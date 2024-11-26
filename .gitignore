@@ -1,0 +1,4 @@
+usr/*
+__pycache__/*
+*.ipynb
+*.deb

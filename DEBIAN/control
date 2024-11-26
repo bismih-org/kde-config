@@ -1,0 +1,16 @@
+Source: kde-bismih-config
+Priority: optional
+Maintainer: Muhammet Halak <halakmuhammet145@gmail.com>
+Section: misc
+Standards-Version: 1.0
+Build-Depends: debhelper (>= 9)
+Package: kde-bismih-config
+Architecture: amd64
+Description: Bismih KDE Config
+ This package contains the configuration files for the Bismih KDE desktop
+ environment.
+ .
+ This package is part of the Bismih project.
+ .
+ Please visit
+Version: 1.0

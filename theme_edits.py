@@ -21,6 +21,8 @@ class ThemeEdits:
             print("Dosya bulunamadı.")
             return
         rsp = requests.get(url, stream=True)
+        if not os.path.exists(cfg.file_path):
+            os.makedirs(cfg.file_path)
         if rsp.status_code == 200:
             with open(cfg.file_path + cfg.file, "wb") as file:
                 for chunk in rsp.iter_content(chunk_size=8192):
@@ -43,9 +45,8 @@ class ThemeEdits:
 
             destination = cfg.file_path
             if cfg.is_folder_need:
-                os.mkdir(cfg.file_name)
                 destination = cfg.file_path + cfg.file_name
-            
+
             if not os.path.exists(destination):
                 os.makedirs(destination)
 
