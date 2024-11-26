@@ -1,0 +1,20 @@
+[KFileDialog Settings]
+Recent Files[$e]=NormCap.AppImage,file:$HOME/Applications/sellected_text_translation/cevir.sh,file:$HOME/Applications/NormCap.AppImage
+Recent URLs[$e]=file:$HOME/Applications/,file:$HOME/Applications/sellected_text_translation/
+detailViewIconSize=16
+
+[MainWindow]
+1920x1080 screen: Height=846
+1920x1080 screen: Width=1270
+1920x1080 screen: Window-Maximized=true
+1920x1080 screen: XPosition=344
+1920x1080 screen: YPosition=121
+2 screens: Height=1051
+2 screens: Width=1920
+2 screens: XPosition=1920
+2 screens: YPosition=29
+HDMI-A-0 eDP=HDMI-A-0
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAQbAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP=eDP
