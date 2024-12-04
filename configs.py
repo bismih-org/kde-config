@@ -1,6 +1,6 @@
 import re
 
-version = "1.0"
+version = "1.3"
 build_dir = "kde-bismih-config_" + version + "_amd64"
 
 
@@ -101,6 +101,15 @@ ids = [
         file="Clock.Asitoki.Color.tar.xz",
         file_path=f"{build_dir}/usr/share/plasma/plasmoids/",
         file_name=("Clock.Asitoki.Color"),
+        is_folder_need=False,
+        index=1,
+    ),
+    Config(
+        id_=2010367,
+        file="thumbnail-switcher-1.0.0-bigger.tar.gz",
+        file_path=f"{build_dir}/usr/share/kwin/tabbox",
+        file_name=("thumbnail_switcher"),
+        is_folder_need=False,
         index=1,
     ),
 ]

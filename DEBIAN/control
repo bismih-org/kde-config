@@ -1,8 +1,9 @@
 Source: kde-bismih-config
 Priority: optional
 Maintainer: Muhammet Halak <halakmuhammet145@gmail.com>
+Installed-Size: 19423259
 Section: misc
-Standards-Version: 1.0
+Standards-Version: 1.3
 Build-Depends: debhelper (>= 9)
 Package: kde-bismih-config
 Architecture: amd64
@@ -13,4 +14,4 @@ Description: Bismih KDE Config
  This package is part of the Bismih project.
  .
  Please visit
-Version: 1.0
+Version: 1.3

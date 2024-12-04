@@ -82,7 +82,7 @@ alias up='sudo nala update'
 alias ins='sudo nala install'
 alias g='git clone'
 alias ch='chmod +x'
-alias b='kate ~/.zshrc'
+alias z='kate ~/.zshrc'
 
 alias co='code .'
 alias pi='pip install'
@@ -95,5 +95,5 @@ alias ....='cd ../../../'
 alias .....='cd ../../../../'
 
 # Shell integrations
-eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"
+#eval "$(fzf --zsh)"
+#eval "$(zoxide init --cmd cd zsh)"

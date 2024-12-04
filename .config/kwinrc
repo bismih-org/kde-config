@@ -21,7 +21,12 @@ Stiffness=3
 WobblynessLevel=3
 
 [Plugins]
+blurEnabled=true
+slidebackEnabled=true
 wobblywindowsEnabled=true
+
+[TabBox]
+LayoutName=thumbnail_switcher
 
 [Tiling]
 padding=4
