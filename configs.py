@@ -1,6 +1,6 @@
 import re
 
-version = "1.3"
+version = "1.3.1"
 build_dir = "kde-bismih-config_" + version + "_amd64"
 
 

@@ -50,8 +50,12 @@ bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
 
+bindkey '^[[1;5D' backward-word  # Ctrl + Sol ok için
+bindkey '^[[1;5C' forward-word   # Ctrl + Sağ ok için
+
+
 # History
-HISTSIZE=5000
+HISTSIZE=1000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
