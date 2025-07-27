@@ -2,3 +2,6 @@ usr/*
 __pycache__/*
 *.ipynb
 *.deb
+s/*
+yedek/*
+s.zip

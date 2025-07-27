@@ -151,9 +151,9 @@ Comment=
 ConditionsCount=0
 
 [Data_1_1]
-Comment=Comment
+Comment=Açıklamalar
 Enabled=true
-Name=Search
+Name=Ara
 Type=SIMPLE_ACTION_DATA
 
 [Data_1_1Actions]
@@ -168,7 +168,7 @@ Comment=
 ConditionsCount=0
 
 [Data_1_1Triggers]
-Comment=Simple_action
+Comment=Basit_eylem
 TriggersCount=1
 
 [Data_1_1Triggers0]
@@ -177,11 +177,11 @@ Type=SHORTCUT
 Uuid={d03619b6-9b3c-48cc-9d9c-a2aadb485550}
 
 [Data_2]
-Comment=This group contains various examples demonstrating most of the features of KHotkeys. (Note that this group and all its actions are disabled by default.)
+Comment=Bu grup KHotkeys uygulamasının birçok özelliğini gösteren örnekler içerir. (Bu grubun ve eylemlerinin öntanımlı olarak devre dışı olduğunu unutmayın.)
 DataCount=8
 Enabled=false
 ImportId=kde32b1
-Name=Examples
+Name=Örnekler
 SystemGroup=0
 Type=ACTION_DATA_GROUP
 
@@ -190,9 +190,9 @@ Comment=
 ConditionsCount=0
 
 [Data_2_1]
-Comment=After pressing Ctrl+Alt+I, the KSIRC window will be activated, if it exists. Simple.
+Comment=Kontrol+Seçenek+I düğmelerine basılırsa var olan KSIRC penceresi etkinleştirilir. Basit.
 Enabled=false
-Name=Activate KSIRC Window
+Name=KSIRC Penceresini Etkinleştir
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_1Actions]
@@ -202,7 +202,7 @@ ActionsCount=1
 Type=ACTIVATE_WINDOW
 
 [Data_2_1Actions0Window]
-Comment=KSIRC window
+Comment=KSIRC penceresi
 WindowsCount=1
 
 [Data_2_1Actions0Window0]
@@ -221,18 +221,18 @@ Comment=
 ConditionsCount=0
 
 [Data_2_1Triggers]
-Comment=Simple_action
+Comment=Basit_eylem
 TriggersCount=1
 
 [Data_2_1Triggers0]
 Key=Ctrl+Alt+I
 Type=SHORTCUT
-Uuid={71440159-c795-4c00-978e-074c2ed48e31}
+Uuid={acbb81ee-dbc1-4190-8ac4-72f70834c698}
 
 [Data_2_2]
-Comment=After pressing Alt+Ctrl+H the input of 'Hello' will be simulated, as if you typed it.  This is especially useful if you have call to frequently type a word (for instance, 'unsigned').  Every keypress in the input is separated by a colon ':'. Note that the keypresses literally mean keypresses, so you have to write what you would press on the keyboard. In the table below, the left column shows the input and the right column shows what to type.\n\n"enter" (i.e. new line)                Enter or Return\na (i.e. small a)                          A\nA (i.e. capital a)                       Shift+A\n: (colon)                                  Shift+;\n' '  (space)                              Space
+Comment=Seçenek+Kontrol+H düğmelerine bastığınızda 'Hello' girişi sanki siz yazmışsınız gibi taklit edilecek. Özellikle 'unsigned' gibi sözcükleri yazmak konusunda tembelseniz kullanışlıdır. Girişte basılan her düğme iki nokta üst üste ':' işareti ile ayrılmıştır. Düğmeye basmanın gerçekten düğmeye basmak anlamına geldiğini unutmayın, yazmak istediğiniz şeyi klavyeye basarak yazmak zorundasınız. Aşağıdaki tabloda sol sütun girişleri sağ sütun ise yazılacak olan şeyleri gösterir.\n\n\\enter" (yeni satır gibi)                Giriş veya Dönüş\na (küçük a)                          A\nA (büyük a)                       Üst Karakter+A\n: (iki nokta üst üste)                                  Üst Karakter+;\n' '  (boşluk)                              Boşluk
 Enabled=false
-Name=Type 'Hello'
+Name='Merhaba' Yaz
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_2Actions]
@@ -248,18 +248,18 @@ Comment=
 ConditionsCount=0
 
 [Data_2_2Triggers]
-Comment=Simple_action
+Comment=Basit_eylem
 TriggersCount=1
 
 [Data_2_2Triggers0]
 Key=Ctrl+Alt+H
 Type=SHORTCUT
-Uuid={efb68a78-4bb5-4201-af6a-ebd9989ee46f}
+Uuid={3468c3b1-b09a-47e7-986c-1bf9fb8c6e46}
 
 [Data_2_3]
-Comment=This action runs Konsole, after pressing Ctrl+Alt+T.
+Comment=Kontrol+Seçenek+T düğmelerine basıldıktan sonra bu eylem Konsole uygulamasını çalıştırır.
 Enabled=false
-Name=Run Konsole
+Name=Konsole Uygulamasını Çalıştır
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_3Actions]
@@ -274,18 +274,18 @@ Comment=
 ConditionsCount=0
 
 [Data_2_3Triggers]
-Comment=Simple_action
+Comment=Basit_eylem
 TriggersCount=1
 
 [Data_2_3Triggers0]
 Key=Ctrl+Alt+T
 Type=SHORTCUT
-Uuid={371de800-5467-4c05-9463-282017e4e2e7}
+Uuid={61d4d9f6-8092-4971-aebc-0c8ee3c77b0a}
 
 [Data_2_4]
-Comment=Read the comment on the "Type 'Hello'" action first.\n\nQt Designer uses Ctrl+F4 for closing windows.  In KDE, however, Ctrl+F4 is the shortcut for going to virtual desktop 4, so this shortcut does not work in Qt Designer.  Further, Qt Designer does not use KDE's standard Ctrl+W for closing the window.\n\nThis problem can be solved by remapping Ctrl+W to Ctrl+F4 when the active window is Qt Designer. When Qt Designer is active, every time Ctrl+W is pressed, Ctrl+F4 will be sent to Qt Designer instead. In other applications, the effect of Ctrl+W is unchanged.\n\nWe now need to specify three things: A new shortcut trigger on 'Ctrl+W', a new keyboard input action sending Ctrl+F4, and a new condition that the active window is Qt Designer.\nQt Designer seems to always have title 'Qt Designer by Trolltech', so the condition will check for the active window having that title.
+Comment=Önce "'Merhaba' Yaz" eylemindeki yorum bölümünü okuyun.\n\nQt Designer pencereleri kapatmak için Kontrol+F4 kullanır. KDE'de ise, Kontrol+F4 sanal masaüstü 4'e geçmenin kısayoludur, dolayısıyla bu kısayol Qt Designer'da çalışmaz. Dahası, Qt Designer da KDE'de pencere kapatmada kullanılan Kontrol+W kısayolunu desteklemez.\n\nBu problem, etkin pencere Qt Designer iken Kontrol+W kısayolunu Kontrol+F4 ile ilişkilendirerek çözülebilir. Qt Designer etkinken, her Kontrol+W'ye basıldığında, Qt Designer'a onun yerine Kontrol+F4 gönderilir. Diğer uygulamalardaki Kontrol+W etkisi değişmez.\n\nBu aşamada üç şeyi belirtmeliyiz: 'Kontrol+W' için yeni kısayol tetikleyici, Kontrol+F4 kısayolunu gönderen yeni klavye giriş eylemi ve Qt Designer'ın etkin olması koşulu.\nQt Designer programında başlık olarak 'Qt Designer by Trolltech' kullanıldığından, eylemin koşulu olarak etkin pencerenin başlığı kontrol edilecektir.
 Enabled=false
-Name=Remap Ctrl+W to Ctrl+F4 in Qt Designer
+Name=Qt Designer içinde Kontrol+W kısayolunu Kontrol+F4 olarak ata
 Type=GENERIC_ACTION_DATA
 
 [Data_2_4Actions]
@@ -313,7 +313,7 @@ ClassType=0
 Comment=
 Role=
 RoleType=0
-Title=Qt Designer by Trolltech
+Title=Qt Designer, Trolltech tarafından
 TitleType=2
 Type=SIMPLE
 WindowTypes=33
@@ -325,12 +325,12 @@ TriggersCount=1
 [Data_2_4Triggers0]
 Key=Ctrl+W
 Type=SHORTCUT
-Uuid={fa04ea8f-005c-45f2-8ca2-ad8237ef30f9}
+Uuid={9db040d9-bd14-4fb1-b202-825961ccf19e}
 
 [Data_2_5]
-Comment=By pressing Alt+Ctrl+W a D-Bus call will be performed that will show the minicli. You can use any kind of D-Bus call, just like using the command line 'qdbus' tool.
+Comment=Seçenek+Kontrol+W düğmelerine basmak bir D-Bus çağrısı yapar ve küçük istemciyi gösterir. 'qdbus' komut satırı aracını kullanır gibi, her türlü D-Bus çağrısını kullanabilirsiniz.
 Enabled=false
-Name=Perform D-Bus call 'qdbus org.kde.krunner /App display'
+Name=D-Bus çağrısı 'qdbus org.kde.krunner /App display' gerçekleştir
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_5Actions]
@@ -348,18 +348,18 @@ Comment=
 ConditionsCount=0
 
 [Data_2_5Triggers]
-Comment=Simple_action
+Comment=Basit_eylem
 TriggersCount=1
 
 [Data_2_5Triggers0]
 Key=Ctrl+Alt+W
 Type=SHORTCUT
-Uuid={64fea4a5-950f-44d9-899e-84e8a232d90f}
+Uuid={4645501d-6bc6-4f18-a298-2345d066f75f}
 
 [Data_2_6]
-Comment=Read the comment on the "Type 'Hello'" action first.\n\nJust like the "Type 'Hello'" action, this one simulates keyboard input, specifically, after pressing Ctrl+Alt+B, it sends B to XMMS (B in XMMS jumps to the next song). The 'Send to specific window' checkbox is checked and a window with its class containing 'XMMS_Player' is specified; this will make the input always be sent to this window. This way, you can control XMMS even if, for instance, it is on a different virtual desktop.\n\n(Run 'xprop' and click on the XMMS window and search for WM_CLASS to see 'XMMS_Player').
+Comment=Önce "Merhaba' Yaz'" eylemindeki Açıklama bölümünü okuyun. \n\n"Merhaba 'Yaz" eylemindekine benzer şekilde bu eylem de klavye girişleri gönderir. Kontrol+Seçenek+B kısayolu kullanıldığında, XMMS uygulamasına B girişi (XMMS'te B, bir sonraki şarkıya geçmek için kullanılır) gönderir. 'XMMS Player' pencere sınıfı belirtildiğinde, bu giriş her zaman XMMS penceresine gönderilir. Bu şekilde, XMMS'i başka sanal masaüstünde de olsa kontrol edebilirsiniz.\n\n('xprop'u çalıştırın ve XMMS penceresine tıklayarak 'XMMS_Player'ı görmek için WM_CLASS'i arayın).
 Enabled=false
-Name=Next in XMMS
+Name=XMMS Uygulamasında Sonraki
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_6Actions]
@@ -371,13 +371,13 @@ Input=B
 Type=KEYBOARD_INPUT
 
 [Data_2_6Actions0DestinationWindow]
-Comment=XMMS window
+Comment=XMMS penceresi
 WindowsCount=1
 
 [Data_2_6Actions0DestinationWindow0]
 Class=XMMS_Player
 ClassType=1
-Comment=XMMS Player window
+Comment=XMMS Oynatıcı penceresi
 Role=
 RoleType=0
 Title=
@@ -390,24 +390,24 @@ Comment=
 ConditionsCount=0
 
 [Data_2_6Triggers]
-Comment=Simple_action
+Comment=Basit_eylem
 TriggersCount=1
 
 [Data_2_6Triggers0]
 Key=Ctrl+Alt+B
 Type=SHORTCUT
-Uuid={262dd6d5-8eab-47e3-9334-01c0deb32924}
+Uuid={d423a05d-b11e-44f7-9530-fc90f778f44f}
 
 [Data_2_7]
-Comment=Konqueror in KDE3.1 has tabs, and now you can also have gestures.\n\nJust press the middle mouse button and start drawing one of the gestures, and after you are finished, release the mouse button. If you only need to paste the selection, it still works, just click the middle mouse button. (You can change the mouse button to use in the global settings).\n\nRight now, there are the following gestures available:\nmove right and back left - Forward (Alt+Right)\nmove left and back right - Back (Alt+Left)\nmove up and back down  - Up (Alt+Up)\ncircle counterclockwise - Reload (F5)\n\nThe gesture shapes can be entered by performing them in the configuration dialog. You can also look at your numeric pad to help you: gestures are recognized like a 3x3 grid of fields, numbered 1 to 9.\n\nNote that you must perform exactly the gesture to trigger the action. Because of this, it is possible to enter more gestures for the action. You should try to avoid complicated gestures where you change the direction of mouse movement more than once.  For instance, 45654 or 74123 are simple to perform, but 1236987 may be already quite difficult.\n\nThe conditions for all gestures are defined in this group. All these gestures are active only if the active window is Konqueror (class contains 'konqueror').
+Comment=KDE 3.1'deki Konqueror'da sekmeler vardır; artık onlara hareket atayabilirsiniz.\n\nYalnızca farenin orta düğmesine basın ve istediğini şekli çizip düğmeyi bırakın. Eğer bir seçimi yapıştırmak isterseniz, yine orta düğmeyi kullanabilirsiniz. (Kullanılacak fare düğmesini Genel Ayarlar bölümünden değiştirebilirsiniz).\n\nArtık aşağıdaki şekiller kullanılabilir durumda:\nsağa git ve sola geri gel - İleri (Seçenek+Sağ Ok)\nsola git ve sağa geri gel - Geri (Seçenek+Sol Ok)\nyukarı git ve aşağı geri gel  - Yukarı (Alt+Üst Ok)\nsaatin ters yönünde çember çiz - Yeniden Yükle (F5)\n\nHareket şekilleri yapılandırma penceresine girilebilir. Sayısal düğme takımınız da size yardımcı olabilir: 1'den 9'a sayılarla da 3x3'lük alanda hareketler algılanabilir.\n\nEylemi tetiklemek için hareketi tam olarak gerçekleştirmeniz gereklidir. Bu nedenle eylem için daha fazla hareket girebilirsiniz. Farenin hareketini birden fazla defa değiştirdiğiniz karmaşık hareketlerden kaçınmalısınız.  Örneğin, 45654 veya 74123 basitçe gerçekleştirilebilirken 1236987 oldukça zor olabilir.\n\nTüm hareketler için koşullar bu grupta tanımlandığı gibidir. Bütün bu hareketler ancak etkin pencere Konqueror ('konqueror' içeren sınıfla) ise etkin olacaktır.
 DataCount=4
 Enabled=false
-Name=Konqi Gestures
+Name=Konqi Hareketleri
 SystemGroup=0
 Type=ACTION_DATA_GROUP
 
 [Data_2_7Conditions]
-Comment=Konqueror window
+Comment=Konqueror penceresi
 ConditionsCount=1
 
 [Data_2_7Conditions0]
@@ -431,7 +431,7 @@ WindowTypes=33
 [Data_2_7_1]
 Comment=
 Enabled=false
-Name=Back
+Name=Geri
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_7_1Actions]
@@ -447,7 +447,7 @@ Comment=
 ConditionsCount=0
 
 [Data_2_7_1Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=3
 
 [Data_2_7_1Triggers0]
@@ -465,7 +465,7 @@ Type=GESTURE
 [Data_2_7_2]
 Comment=
 Enabled=false
-Name=Forward
+Name=İleri
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_7_2Actions]
@@ -481,7 +481,7 @@ Comment=
 ConditionsCount=0
 
 [Data_2_7_2Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=3
 
 [Data_2_7_2Triggers0]
@@ -499,7 +499,7 @@ Type=GESTURE
 [Data_2_7_3]
 Comment=
 Enabled=false
-Name=Up
+Name=Yukarı
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_7_3Actions]
@@ -515,7 +515,7 @@ Comment=
 ConditionsCount=0
 
 [Data_2_7_3Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=3
 
 [Data_2_7_3Triggers0]
@@ -533,7 +533,7 @@ Type=GESTURE
 [Data_2_7_4]
 Comment=
 Enabled=false
-Name=Reload
+Name=Yeniden Yükle
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_7_4Actions]
@@ -549,7 +549,7 @@ Comment=
 ConditionsCount=0
 
 [Data_2_7_4Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=3
 
 [Data_2_7_4Triggers0]
@@ -565,9 +565,9 @@ GesturePointData=0,0.0277778,0.5,0,0.5,0.0277778,0.0277778,0.5,0,0.625,0.0555556
 Type=GESTURE
 
 [Data_2_8]
-Comment=After pressing Win+E (Tux+E) a WWW browser will be launched, and it will open http://www.kde.org . You may run all kind of commands you can run in minicli (Alt+F2).
+Comment=Win+E (Tux+E) düğmelerine basılırsa WWW tarayıcı açılır ve http://www.kde.org sayfası gösterilir. Ayrıca (Seçenek+F2) ile açılan istemciden tüm komutları çalıştırabilirsiniz.
 Enabled=false
-Name=Go to KDE Website
+Name=KDE Web Sitesine Git
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_8Actions]
@@ -582,25 +582,25 @@ Comment=
 ConditionsCount=0
 
 [Data_2_8Triggers]
-Comment=Simple_action
+Comment=Basit_eylem
 TriggersCount=1
 
 [Data_2_8Triggers0]
 Key=Meta+E
 Type=SHORTCUT
-Uuid={52891fd4-ebf8-40b7-bb3b-ab912cd67fe3}
+Uuid={9b47c13e-a3f7-4ea8-ac51-6b4f33d7589f}
 
 [Data_3]
-Comment=Basic Konqueror gestures.
+Comment=Basit Konqueror hareketleri.
 DataCount=14
 Enabled=true
 ImportId=konqueror_gestures_kde321
-Name=Konqueror Gestures
+Name=Konqueror Hareketleri
 SystemGroup=0
 Type=ACTION_DATA_GROUP
 
 [Data_3Conditions]
-Comment=Konqueror window
+Comment=Konqueror penceresi
 ConditionsCount=1
 
 [Data_3Conditions0]
@@ -616,21 +616,21 @@ ClassType=3
 Comment=Konqueror
 Role=konqueror-mainwindow#1
 RoleType=0
-Title=file:/ - Konqueror
+Title=dosya:/ - Konqueror
 TitleType=0
 Type=SIMPLE
 WindowTypes=1
 
 [Data_3_1]
-Comment=Press, move left, release.
+Comment=Bas, sola taşı, bırak.
 Enabled=true
-Name=Back
+Name=Geri
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_10]
-Comment=Opera-style: Press, move up, release.\nNOTE: Conflicts with 'New Tab', and as such is disabled by default.
+Comment=Opera-biçimi: Bas, yukarı taşı, bırak.\nNOT: 'Yeni Sekme' ile çakışır ve ön tanımlı olarak devre dışıdır.
 Enabled=false
-Name=Stop Loading
+Name=Yüklemeyi Durdur
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_10Actions]
@@ -646,7 +646,7 @@ Comment=
 ConditionsCount=0
 
 [Data_3_10Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=1
 
 [Data_3_10Triggers0]
@@ -654,9 +654,9 @@ GesturePointData=0,0.125,-0.5,0.5,1,0.125,0.125,-0.5,0.5,0.875,0.25,0.125,-0.5,0
 Type=GESTURE
 
 [Data_3_11]
-Comment=Going up in URL/directory structure.\nMozilla-style: Press, move up, move left, move up, release.
+Comment=URL/dizin yapısında yukarı gitmek.\nMozilla-biçimi: Bas, yukarı taşı, sola taşı, yukarı taşı, bırak.
 Enabled=true
-Name=Up
+Name=Yukarı
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_11Actions]
@@ -672,7 +672,7 @@ Comment=
 ConditionsCount=0
 
 [Data_3_11Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=1
 
 [Data_3_11Triggers0]
@@ -680,9 +680,9 @@ GesturePointData=0,0.0625,-0.5,1,1,0.0625,0.0625,-0.5,1,0.875,0.125,0.0625,-0.5,
 Type=GESTURE
 
 [Data_3_12]
-Comment=Going up in URL/directory structure.\nOpera-style: Press, move up, move left, move up, release.\nNOTE: Conflicts with  "Activate Previous Tab", and as such is disabled by default.
+Comment=URL/dizin yapısında yukarı gitmek.\nOpera-biçimi: Bas, yukarı taşı, sola taşı, yukarı taşı, bırak.\nNOT: "Önceki Sekmeyi Etkinleştir" ile çakışır ve ön tanımlı olarak devre dışıdır.
 Enabled=false
-Name=Up #2
+Name=Yukarı #2
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_12Actions]
@@ -698,7 +698,7 @@ Comment=
 ConditionsCount=0
 
 [Data_3_12Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=1
 
 [Data_3_12Triggers0]
@@ -706,9 +706,9 @@ GesturePointData=0,0.0625,-0.5,1,1,0.0625,0.0625,-0.5,1,0.875,0.125,0.0625,-0.5,
 Type=GESTURE
 
 [Data_3_13]
-Comment=Press, move up, move right, release.
+Comment=Bas, yukarı taşı, sağa taşı, bırak.
 Enabled=true
-Name=Activate Next Tab
+Name=Sonraki Sekmeyi Etkinleştir
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_13Actions]
@@ -724,7 +724,7 @@ Comment=
 ConditionsCount=0
 
 [Data_3_13Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=1
 
 [Data_3_13Triggers0]
@@ -732,9 +732,9 @@ GesturePointData=0,0.0625,-0.5,0,1,0.0625,0.0625,-0.5,0,0.875,0.125,0.0625,-0.5,
 Type=GESTURE
 
 [Data_3_14]
-Comment=Press, move up, move left, release.
+Comment=Bas, yukarı taşı sola taşı,, bırak.
 Enabled=true
-Name=Activate Previous Tab
+Name=Önceki Sekmeyi Etkinleştir
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_14Actions]
@@ -750,7 +750,7 @@ Comment=
 ConditionsCount=0
 
 [Data_3_14Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=1
 
 [Data_3_14Triggers0]
@@ -770,7 +770,7 @@ Comment=
 ConditionsCount=0
 
 [Data_3_1Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=1
 
 [Data_3_1Triggers0]
@@ -778,9 +778,9 @@ GesturePointData=0,0.125,1,1,0.5,0.125,0.125,1,0.875,0.5,0.25,0.125,1,0.75,0.5,0
 Type=GESTURE
 
 [Data_3_2]
-Comment=Press, move down, move up, move down, release.
+Comment=Bas, aşağı taşı, yukarı taşı, aşağı taşı, bırak.
 Enabled=true
-Name=Duplicate Tab
+Name=Sekmeyi İkile
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_2Actions]
@@ -796,7 +796,7 @@ Comment=
 ConditionsCount=0
 
 [Data_3_2Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=1
 
 [Data_3_2Triggers0]
@@ -804,9 +804,9 @@ GesturePointData=0,0.0416667,0.5,0.5,0,0.0416667,0.0416667,0.5,0.5,0.125,0.08333
 Type=GESTURE
 
 [Data_3_3]
-Comment=Press, move down, move up, release.
+Comment=Bas, aşağı taşı, yukarı taşı, bırak.
 Enabled=true
-Name=Duplicate Window
+Name=Pencereyi İkile
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_3Actions]
@@ -822,7 +822,7 @@ Comment=
 ConditionsCount=0
 
 [Data_3_3Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=1
 
 [Data_3_3Triggers0]
@@ -830,9 +830,9 @@ GesturePointData=0,0.0625,0.5,0.5,0,0.0625,0.0625,0.5,0.5,0.125,0.125,0.0625,0.5
 Type=GESTURE
 
 [Data_3_4]
-Comment=Press, move right, release.
+Comment=Bas, sağa taşı, bırak.
 Enabled=true
-Name=Forward
+Name=İleri
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_4Actions]
@@ -848,7 +848,7 @@ Comment=
 ConditionsCount=0
 
 [Data_3_4Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=1
 
 [Data_3_4Triggers0]
@@ -856,9 +856,9 @@ GesturePointData=0,0.125,0,0,0.5,0.125,0.125,0,0.125,0.5,0.25,0.125,0,0.25,0.5,0
 Type=GESTURE
 
 [Data_3_5]
-Comment=Press, move down, move half up, move right, move down, release.\n(Drawing a lowercase 'h'.)
+Comment=Bas, aşağı taşı, yarı yukarı taşı, sağa taşı, aşağı taşı, bırak.\n(Bir küçük 'h' harfi çizin.)
 Enabled=true
-Name=Home
+Name=Ana Klasör
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_5Actions]
@@ -874,7 +874,7 @@ Comment=
 ConditionsCount=0
 
 [Data_3_5Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=2
 
 [Data_3_5Triggers0]
@@ -886,9 +886,9 @@ GesturePointData=0,0.0416667,0.5,0,0,0.0416667,0.0416667,0.5,0,0.125,0.0833333,0
 Type=GESTURE
 
 [Data_3_6]
-Comment=Press, move right, move down, move right, release.\nMozilla-style: Press, move down, move right, release.
+Comment=Bas, sağa taşı, aşağı taşı, sağa taşı, bırak.\nMozilla-biçimi: Bas, aşağı taşı, sağa taşı, bırak.
 Enabled=true
-Name=Close Tab
+Name=Sekmeyi Kapat
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_6Actions]
@@ -904,7 +904,7 @@ Comment=
 ConditionsCount=0
 
 [Data_3_6Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=2
 
 [Data_3_6Triggers0]
@@ -916,9 +916,9 @@ GesturePointData=0,0.0625,0.5,0,0,0.0625,0.0625,0.5,0,0.125,0.125,0.0625,0.5,0,0
 Type=GESTURE
 
 [Data_3_7]
-Comment=Press, move up, release.\nConflicts with Opera-style 'Up #2', which is disabled by default.
+Comment=Bas, yukarı taşı, bırak.\nOpera-biçimi ile çakışır 'Yukarı #2', öntanımlı olarak devre dışıdır.
 Enabled=true
-Name=New Tab
+Name=Yeni Sekme
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_7Actions]
@@ -934,7 +934,7 @@ Comment=
 ConditionsCount=0
 
 [Data_3_7Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=1
 
 [Data_3_7Triggers0]
@@ -942,9 +942,9 @@ GesturePointData=0,0.125,-0.5,0.5,1,0.125,0.125,-0.5,0.5,0.875,0.25,0.125,-0.5,0
 Type=GESTURE
 
 [Data_3_8]
-Comment=Press, move down, release.
+Comment=Bas, aşağı taşı, bırak.
 Enabled=true
-Name=New Window
+Name=Yeni Pencere
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_8Actions]
@@ -960,7 +960,7 @@ Comment=
 ConditionsCount=0
 
 [Data_3_8Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=1
 
 [Data_3_8Triggers0]
@@ -968,9 +968,9 @@ GesturePointData=0,0.125,0.5,0.5,0,0.125,0.125,0.5,0.5,0.125,0.25,0.125,0.5,0.5,
 Type=GESTURE
 
 [Data_3_9]
-Comment=Press, move up, move down, release.
+Comment=Bas, yukarı taşı, aşağı taşı, bırak.
 Enabled=true
-Name=Reload
+Name=Yeniden Yükle
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_9Actions]
@@ -986,7 +986,7 @@ Comment=
 ConditionsCount=0
 
 [Data_3_9Triggers]
-Comment=Gesture_triggers
+Comment=Hareket_tetikleyiciler
 TriggersCount=1
 
 [Data_3_9Triggers0]
@@ -994,9 +994,9 @@ GesturePointData=0,0.0625,-0.5,0.5,1,0.0625,0.0625,-0.5,0.5,0.875,0.125,0.0625,-
 Type=GESTURE
 
 [Data_4]
-Comment=Comment
+Comment=Açıklama
 Enabled=true
-Name=flameshot
+Name=flameshot_gui
 Type=SIMPLE_ACTION_DATA
 
 [Data_4Actions]
@@ -1017,12 +1017,12 @@ TriggersCount=1
 [Data_4Triggers0]
 Key=Print
 Type=SHORTCUT
-Uuid={ac858dd1-7431-40e8-990d-41119f99786a}
+Uuid={beb8601e-1ccf-4a8a-887b-0efe4f22101c}
 
 [Data_5]
-Comment=Comment
+Comment=Açıklama
 Enabled=true
-Name=flameshot_delay
+Name=flameshot_gui_d2
 Type=SIMPLE_ACTION_DATA
 
 [Data_5Actions]
@@ -1043,19 +1043,19 @@ TriggersCount=1
 [Data_5Triggers0]
 Key=Shift+Print
 Type=SHORTCUT
-Uuid={78b60c9b-a371-4698-acfe-5b59416f3688}
+Uuid={9b2efc26-fd12-4b44-8b62-97f3ce9db410}
 
 [Data_6]
-Comment=Comment
+Comment=Açıklama
 Enabled=true
-Name=normcap
+Name=quick-shortcut-menu
 Type=SIMPLE_ACTION_DATA
 
 [Data_6Actions]
 ActionsCount=1
 
 [Data_6Actions0]
-CommandURL=$HOME/Applications/NormCap.AppImage
+CommandURL=quick-shortcut-panel
 Type=COMMAND_URL
 
 [Data_6Conditions]
@@ -1067,21 +1067,21 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_6Triggers0]
-Key=Ctrl+Print
+Key=Ctrl+Shift+J
 Type=SHORTCUT
-Uuid={5cf4d1a1-80f3-4cb2-8a53-dacf5fc5e7ce}
+Uuid={0060dc49-dcbd-41dd-8386-f8b55326f7dc}
 
 [Data_7]
-Comment=Comment
+Comment=Açıklama
 Enabled=true
-Name=text_to_translate
+Name=normcap
 Type=SIMPLE_ACTION_DATA
 
 [Data_7Actions]
 ActionsCount=1
 
 [Data_7Actions0]
-CommandURL=$HOME/Applications/sellected_text_translation/cevir.sh
+CommandURL=~/Applications/NormCap-0.5.6-x86_64_622520793916910ce2b4e16a2a7b0d41.AppImage
 Type=COMMAND_URL
 
 [Data_7Conditions]
@@ -1093,9 +1093,13 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_7Triggers0]
-Key=Ctrl+Shift+J
+Key=Ctrl+Print
 Type=SHORTCUT
-Uuid={2de1e897-97db-4e4a-ba98-be6187ccc6f0}
+Uuid={b65455e0-5748-42ab-9b7c-938f0f6b16be}
+
+[DirSelect Dialog]
+DirSelectDialog Size[$d]
+History Items[$d]
 
 [General]
 AccentColor[$d]

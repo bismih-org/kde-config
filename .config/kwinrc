@@ -1,27 +1,34 @@
 [$Version]
 update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default,kwin.upd:overview-group-plugin-id,kwin.upd:animation-speed-cleanup,kwin.upd:replace-cascaded-zerocornered
 
+[Compositing]
+LatencyPolicy=Medium
+
 [Desktops]
-Id_1=839c203a-daab-4e0a-83e2-77b0b3ff5651
-Id_2=690dc0f9-66ad-421c-a58d-7d518a078250
-Id_3=56881775-efc6-40d7-aa66-0442d9453c40
+Id_1=6db7365e-7e28-45d8-9c2b-ad115622dbd6
+Id_2=eb95777d-e3e8-490a-b0ab-0872fcad5f48
+Id_3=ce263662-d82c-4289-8e01-2354561d3d70
 Name_1=1
 Name_2=2
 Name_3=3
 Number=3
 Rows=1
 
+[Effect-blur]
+BlurStrength=8
+NoiseStrength=2
+
 [Effect-desktopgrid]
 BorderActivate=1
 
 [Effect-wobblywindows]
-Drag=92
-MoveFactor=20
-Stiffness=3
-WobblynessLevel=3
+Drag=90
+Stiffness=6
+WobblynessLevel=2
 
 [Plugins]
 blurEnabled=true
+contrastEnabled=true
 slidebackEnabled=true
 wobblywindowsEnabled=true
 

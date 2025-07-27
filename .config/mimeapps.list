@@ -1,9 +1,11 @@
 [Added Associations]
-application/octet-stream=tr.org.pardus.package-installer.desktop;
 application/vnd.debian.binary-package=tr.org.pardus.package-installer.desktop;
 audio/mpeg=audacious.desktop;
+directory=org.kde.dolphin.desktop;code.desktop;org.kde.kate.desktop;org.kde.gwenview.desktop;
+inode/directory=org.kde.dolphin.desktop;code.desktop;org.kde.kate.desktop;org.kde.gwenview.desktop;
 text/plain=org.kde.kate.desktop;
 
 [Default Applications]
 application/vnd.debian.binary-package=tr.org.pardus.package-installer.desktop;
 audio/mpeg=audacious.desktop;
+inode/directory=org.kde.dolphin.desktop;

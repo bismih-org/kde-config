@@ -14,7 +14,7 @@ if __name__ == "__main__":
     for cfg in ids:
         theme_edits.download(theme_edits.get_link(cfg), cfg)
 
-    folders = (".config", ".fonts", ".local")
+    folders = (".config", ".fonts", ".local", ".var")
     files = (".fonts.conf", ".p10k.zsh", ".zshrc")
     os.makedirs(build_dir + "/etc/skel")
 

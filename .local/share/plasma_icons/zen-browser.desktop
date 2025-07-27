@@ -1,0 +1,30 @@
+[Desktop Action new-private-window]
+Exec=/opt/zen-browser/zen --private-window
+Name[tr_TR]=Yeni Gizli Pencere
+Name=New Private Window
+
+[Desktop Action new-window]
+Exec=/opt/zen-browser/zen --new-window
+Name[tr_TR]=Yeni Pencere
+Name=New Window
+
+[Desktop Entry]
+Actions=new-window;new-private-window;
+Categories=Network;WebBrowser;
+Comment[tr_TR]=Zen Tarayıcı
+Comment=Zen Tarayıcı
+Exec=/opt/zen-browser/zen %U
+GenericName[tr_TR]=Zen
+GenericName=Zen
+Icon=zen-browser
+MimeType=text/html;image/webp;image/png;image/jpeg;image/gif;application/xml;application/xml;application/xhtml+xml;application/rss+xml;application/rdf+xml;application/pdf;
+Name[tr_TR]=Zen Tarayıcı
+Name=Zen Tarayıcı
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -53,6 +53,8 @@ bindkey '^[w' kill-region
 bindkey '^[[1;5D' backward-word  # Ctrl + Sol ok için
 bindkey '^[[1;5C' forward-word   # Ctrl + Sağ ok için
 
+bindkey '^H' backward-kill-word
+bindkey '^[[3;5~' kill-word 
 
 # History
 HISTSIZE=1000
@@ -84,6 +86,11 @@ alias s='source ~/.zshrc'
 
 alias up='sudo nala update'
 alias ins='sudo nala install'
+alias se='nala search'
+
+alias fm='sudo apt install --fix-missing'
+alias fm='sudo apt install --fix-broken'
+
 alias g='git clone'
 alias ch='chmod +x'
 alias z='kate ~/.zshrc'
@@ -91,6 +98,7 @@ alias z='kate ~/.zshrc'
 alias co='code .'
 alias pi='pip install'
 alias piu='pip uninstall'
+alias p='python3'
 
 
 alias ..='cd ..'

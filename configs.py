@@ -1,6 +1,6 @@
 import re
 
-version = "1.3.2"
+version = "1.4.0"
 build_dir = "kde-bismih-config_" + version + "_amd64"
 
 
@@ -64,14 +64,14 @@ ids = [
         index=1,
         is_folder_need=False,
     ),
-    Config(
-        id_=1477945,
-        file="Fluent-orange.tar.xz",
-        file_path=f"{build_dir}/usr/share/icons/",
-        index=4,
-        file_name=("Fluent-orange", "Fluent-orange-dark", "Fluent-orange-light"),
-        is_folder_need=False,
-    ),
+    # Config(
+    #     id_=1477945,
+    #     file="Fluent-orange.tar.xz",
+    #     file_path=f"{build_dir}/usr/share/icons/",
+    #     index=4,
+    #     file_name=("Fluent-orange", "Fluent-orange-dark", "Fluent-orange-light"),
+    #     is_folder_need=False,
+    # ),
     Config(
         id_=2203672,
         file="HelixAI.plasmoid",

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Bismih Welcome
+Name[tr]=Bismih Hoşgeldiniz
+Comment=Welcome to Bismih
+Comment[tr]=Bismih'e Hoşgeldiniz
+Exec=bismih-welcome
+Icon=bismih-welcome
+Terminal=false
+Categories=Utility;
+Keywords=bismih;linux;welcome;
+Keywords[tr]=bismih;linux;hosgeldin;
