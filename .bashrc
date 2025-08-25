@@ -119,7 +119,9 @@ PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 
 [ -f /usr/share/doc/fzf/examples/key-bindings.bash ] && source /usr/share/doc/fzf/examples/key-bindings.bash
 
-
+gpu() {
+    __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia "$@"
+}
 
 alias b='kate ~/.bashrc'
 alias c='clear'
